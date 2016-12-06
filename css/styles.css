@@ -1,1 +1,108 @@
 @charset "utf-8";
+
+*{background-color: #edecf1; font-family: Verdana, Geneva, sans-serif; color: DimGrey; word-wrap: break-word;}
+
+header, nav, #main {
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+h1 {text-indent: 30px;}
+
+h2 {text-indent: 60px;}
+
+p {text-indent: 30px; margin-left: 90px; z-index: 1;}
+
+.anchor { padding-top: 30px; }
+
+header {
+
+  height: 36px;
+  top: 0px;
+  left: 0px;
+  background-color: #b8a4a1;
+  width: 100%;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 6;
+
+}
+
+header a {text-decoration: none; background-color: inherit; transition: color .5s ease-in-out;}
+
+header a:hover {color: black;}
+
+header h1 {font-size: 20px; display: inline; background-color: inherit;}
+
+ul{position: fixed; top: 20px; right: 0; height: 102%; width: 18%; text-decoration: none; list-style-type:none; z-index: 0;}
+
+li {
+  text-align: center;
+  display: block;
+
+  list-style-type: none;
+  padding-top: 67px;
+  margin-left:0;
+  margin-right: 0;
+  width: 100%;
+  height: 11.5%;
+  opacity: 1;
+  background-color: inherit;
+  transition: opacity 5s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+li:hover {opacity: 0.8}
+
+li a {
+  text-decoration: none;
+  color: black;
+  background-color: inherit;
+}
+
+li#in_use{background-color: #ff964f;}
+li#events{background-color: #b8a4a1;}
+li#botm{background-color: #992e2e;}
+li#gallery{background-color: #d7cec7;}
+li#news{background-color: #565656;}
+
+#main {width: 100%; height: 100%; }
+
+#home h1{
+  display: block;
+  font-size: 200px;
+  margin-right: 18%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  height: 760px;
+  left: 0px;
+  color: black;
+  background-image: url(books2.jpg);
+  background-size: cover;
+  overflow: hidden;
+
+  width: 82%;
+  position: relative;
+  z-index: 5;
+}
+
+div#main h2, div#main p {
+  margin-right: 21%;
+  left: 0px;
+}
+
+#eventsPage, #botmPage, #galleryPage, #newsPage { margin-top: 50px;}
+
+iframe {margin-left:30%;}
+
+#galleryPage img {margin-left: 150px;}
+
+/*FADE IN TEST*/
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
